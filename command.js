@@ -8,5 +8,8 @@ class Command {
    }
  
  }
+
+//  let newProperty = new Command(23);
+//  console.log(newProperty);
  
  module.exports = Command;
