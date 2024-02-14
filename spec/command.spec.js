@@ -10,11 +10,11 @@ describe("Command class", function() {
   });
 
   it("constructor sets command type", function(){
-     new Command('string',1);    
+     new Command('Mode_change',1);    
   });
 
   it('constructor sets a value passed in as the 2nd argument', function(){
     // new Command(Number);
-     new Command(Number, 1);
+     new Command(Number, 'LOW_POWER');
   });
 });
