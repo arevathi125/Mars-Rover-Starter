@@ -11,7 +11,7 @@ class Rover {
    receiveMessage(message){
       let completed = '';
       let response = {
-         message: message.name,
+         message : message.name,
          results : message.commands.map(element =>{
          if (element.commandType === 'MODE_CHANGE' && element.value){
                this.mode = element.value;
@@ -39,11 +39,6 @@ class Rover {
    
    }
 
-   //  let newobj = new Rover(123);
-   // // console.log(newobj);
-   // let message = new Message()
-   //  let response = newobj.receiveMessage(message);
-
 // let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
 // let message = new Message('Test message with two commands', commands);
 // let rover = new Rover(98382);    // Passes 98382 as the rover's position.
@@ -51,9 +46,6 @@ class Rover {
 
 // console.log(response);
     
-   //console.log(newobj);
-   //console.log(response);
-
    let rover = new Rover(100);
    let commands = [
       new Command('MOVE', 4321),
